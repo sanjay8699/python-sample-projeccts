@@ -1,8 +1,7 @@
 import random
 import hangman_stages
 words = ['apple','banana','orange']
-select_words = random.choice(words) #apple
-print(select_words)
+select_words = random.choice(words) 
 space=[]
 lives = 6
 for i in select_words:
@@ -11,8 +10,8 @@ print(space)
 
 game_over = False
 while not  game_over:
-     guessed_letter = input("guess a letter").lower() # p
-     for position in range(len(select_words)): # 0 1 2 3 4
+     guessed_letter = input("guess a letter").lower() 
+     for position in range(len(select_words)): 
           letter = select_words[position]
           if letter == guessed_letter:
                space[position] = guessed_letter
